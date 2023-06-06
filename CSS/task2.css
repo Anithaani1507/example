@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background: linear-gradient(rgb(92, 80, 180), rgb(46, 46, 113));
+}
+
+#h1 {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(15, 15, 140);
+}
+
+
+.ex {
+
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.example {
+    padding-right: 50px;
+    margin: 15px;
+    width: 200px;
+
+}
+
+.text1 {
+    position: relative;
+}
+
+.text2 {
+    background: url("../Images/ab.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 1518px;
+    color: rgb(65, 57, 57);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 250px;
+
+
+}
+
+.head {
+    font-size: 21px;
+
+    padding: 50px 50px 50px 50px;
+
+}
+
+.id {
+    padding-left: 100px;
+
+}
+
+.id1 {
+    padding-right: 50px;
+
+}
+
+.txt {
+    font-size: 54px;
+    color: rgb(29, 29, 194);
+    padding-left: 150px;
+    background-color: rgb(129, 213, 247);
+
+}
+
+.txt1 {
+    font-size: 30px;
+    color: rgb(92, 90, 90);
+}
+
+
+
+.list {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    width: 500px;
+}
+
+li::marker {
+    color: blue;
+}
+
+.Col {
+    text-align: center;
+}
+
+.row {
+    text-align: center;
+}
+
+h6 {
+    color: blue;
+}
+
+.table {
+    padding-left: 60px;
+    margin-left: 30px;
+
+    text-align: center;
+}
+
+.off {
+    margin-top: 0px;
+}
+
+i {
+    color: rgb(247, 13, 181);
+
+}
+
+/* @include media-breakpoint-down(md) {
+    .custom-class {
+      display: block;
+    }
+  } */
+
+@media (min-width: 576px) {
+    body {
+        display: block;
+    }
+}
+
+.demo {
+    text-align: justify;
+    padding-left: 10px;
+
+}
+
+button {
+    text-decoration-line: none;
+    color: black;
+}
+
+.lgt {
+    text-decoration: none;
+    color: rgb(122, 112, 112);
+    font-weight: 500;
+
+}
+
+.gf {
+
+    padding-left: 1250px;
+    margin-top: -135px;
+    /* position: -webkit-sticky; /* Safari */
+    /* position: sticky;
+  top: 0; */
+}

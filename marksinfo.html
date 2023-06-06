@@ -1,0 +1,415 @@
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/employee.css">
+    <script src="../jquery/jquery-3.6.4.min.js"></script>
+    <script src="JS/bloom.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="ex">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <h1 id="h1"> BL</h1>
+                        <div class="spinner-border text-primary P-3" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <div class="spinner-border text-primary p-3" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <h1 id="h1">M SCHOOL</h1>
+
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="d-sm-none  d-md-none d-lg-block  d-xl-block d-xxl-block">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="Bloom.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="courses.html">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="trainers.html">Trainers</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown MenuLink" role="button"
+                                      data-bs-toggle="dropdown" aria-expanded="false">
+                                      Student Info
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown MenuLink">
+                                      <li><a class="dropdown-item" href="reportcard.html">Report card</a></li>
+                                      <li><a class="dropdown-item" href="marks.html">Annual Examination Result</a></li>
+                                      <li><a class="dropdown-item" href="halltick.html">Hall ticket validation</a></li>
+                                      <li><a class="dropdown-item" href="view.html">View Data</a></li>
+                                      <li><a class="dropdown-item" href="marksinfo.html">Students Marks</a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+            <div>
+                <div class="col-8 m-auto bg-dark text-white">
+                    <h2 class="text-center"> Students Datas- Bloom School</h2>
+                </div><br><br><br><br>
+
+                <!-- <button type="button" class="btn btn-dark" onclick="viw_marks()">Details</button> -->
+
+
+
+                <div>
+                    <table class="table table-hover table-bordered table-light">
+                        <thead>
+                            <tr>
+                                <th scope="col">S.No</th>
+                                <th scope="col">Full Name</th>
+                                <th scope="col">Roll Number</th>
+                                <th scope="col">English </th>
+                                <th scope="col">Tamil</th>
+                                <th scope="col">Math</th>
+                                <th scope="col">Science</th>
+                                <th scope="col">Social </th>
+                                <th scope="col">Total Scored</th>
+                                <th scope="col">Percentage %</th>
+                                <th scope="col">Grade </th>
+                                <th scope="col">Remarks </th>
+                                <th id="th1" scope="col"><button onclick="Clr_marks()">Clear</button></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td id="Mar001"></td>
+                                <td id="Mar0"></td>
+                                <td id="Mar2"></td>
+                                <td id="Mar3"></td>
+                                <td id="Mar4"></td>
+                                <td id="Mar5"></td>
+                                <td id="Mar6"></td>
+                                <td id="Mar7"></td>
+                                <td id="Mar8"></td>
+                                <td id="Mar9"></td>
+                                <td id="Mar10"></td>
+                                <td><button class="icon" onclick="del_marks()"><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td id="Mar11"></td>
+                                <td id="Mar01"></td>
+                                <td id="Mar12"></td>
+                                <td id="Mar13"></td>
+                                <td id="Mar14"></td>
+                                <td id="Mar15"></td>
+                                <td id="Mar16"></td>
+                                <td id="Mar17"></td>
+                                <td id="Mar18"></td>
+                                <td id="Mar19"></td>
+                                <td id="Mar20"></td>
+                                <td><button onclick="del1_marks()"><i class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td id="Mar21"></td>
+                                <td id="Mar02"></td>
+                                <td id="Mar22"></td>
+                                <td id="Mar23"></td>
+                                <td id="Mar24"></td>
+                                <td id="Mar25"></td>
+                                <td id="Mar26"></td>
+                                <td id="Mar27"></td>
+                                <td id="Mar28"></td>
+                                <td id="Mar29"></td>
+                                <td id="Mar30"></td>
+                                <td><button onclick="del2_marks()"><i class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td id="Mar31"></td>
+                                <td id="Mar03"></td>
+                                <td id="Mar32"></td>
+                                <td id="Mar33"></td>
+                                <td id="Mar34"></td>
+                                <td id="Mar35"></td>
+                                <td id="Mar36"></td>
+                                <td id="Mar37"></td>
+                                <td id="Mar38"></td>
+                                <td id="Mar39"></td>
+                                <td id="Mar40"></td>
+                                <td><button onclick="del3_marks()"><i class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td id="Mar41"></td>
+                                <td id="Mar04"></td>
+                                <td id="Mar42"></td>
+                                <td id="Mar43"></td>
+                                <td id="Mar44"></td>
+                                <td id="Mar45"></td>
+                                <td id="Mar46"></td>
+                                <td id="Mar47"></td>
+                                <td id="Mar48"></td>
+                                <td id="Mar49"></td>
+                                <td id="Mar50"></td>
+                                <td><button onclick="del4_marks()"><i class="fa-solid fa-trash-can"></i></button></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div>
+
+                <footer class="text-center text-lg-start bg-light text-muted">
+
+                    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                        <div class="me-5 d-none d-lg-block">
+                            <span>Get connected with us on social networks:</span>
+                        </div>
+
+                        <div>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+
+                    </section>
+
+                    <section class="">
+                        <div class="container text-center text-md-start mt-5">
+
+                            <div class="row mt-3">
+
+                                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        <i class="fas fa-gem me-3"></i>Bloom School
+                                    </h6>
+                                    <p>
+                                        Bloom school vibes with strength, stability and simplicity.
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                                    <h6 class="text-uppercase fw-bold mb-4">
+                                        Useful links
+                                    </h6>
+                                    <p>
+                                        <a href="#!" class="text-reset">Home</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Settings</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Application</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!" class="text-reset">Help</a>
+                                    </p>
+                                </div>
+
+
+
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                                    <p><i class="fas fa-home me-3"></i> Vadapalani, Chennai 610012, TN</p>
+                                    <p>
+                                        <i class="fas fa-envelope me-3"></i>
+                                        bloomschoolinfo@mail.com
+                                    </p>
+                                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                                    <p><i class="fas fa-print me-3"></i> +91 9876543210</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                        © 2022 Copyright:
+                        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BloomSchool.com</a>
+                    </div>
+                </footer>
+            </div>
+
+            <script>
+                $(document).ready(function(){
+                    var stud1 = localStorage.getItem("Marks");
+                    var Json_stud1 = JSON.parse(stud1);
+                    var stud2 = localStorage.getItem("Marks1");
+                    var Json_stud2 = JSON.parse(stud2);
+                    var stud3 = localStorage.getItem("Marks2");
+                    var Json_stud3 = JSON.parse(stud3);
+                    var stud4 = localStorage.getItem("Marks3");
+                    var Json_stud4 = JSON.parse(stud4);
+                    var stud5 = localStorage.getItem("Marks4");
+                    var Json_stud5 = JSON.parse(stud5);
+
+
+                    if (Json_stud1 != undefined && Json_stud1 != null && Json_stud1 != "") {
+                        document.getElementById("Mar001").innerHTML = Json_stud1.fulName;
+                        document.getElementById("Mar0").innerHTML = Json_stud1.rollNum;
+                        document.getElementById("Mar2").innerHTML = Json_stud1.English;
+                        document.getElementById("Mar3").innerHTML = Json_stud1.Tamil;
+                        document.getElementById("Mar4").innerHTML = Json_stud1.Math;
+                        document.getElementById("Mar5").innerHTML = Json_stud1.Science;
+                        document.getElementById("Mar6").innerHTML = Json_stud1.Social;
+                        document.getElementById("Mar7").innerHTML = Json_stud1.Total;
+                        document.getElementById("Mar8").innerHTML = Json_stud1.Percentage;
+                        document.getElementById("Mar9").innerHTML = Json_stud1.Grade;
+                        document.getElementById("Mar10").innerHTML = Json_stud1.Remarks;
+
+
+                    }
+                    else {
+
+                        document.getElementById("Mar001").innerHTML = "Null"
+                        document.getElementById("Mar0").innerHTML = "Null"
+                        document.getElementById("Mar2").innerHTML = "Null"
+                        document.getElementById("Mar3").innerHTML = "Null"
+                        document.getElementById("Mar4").innerHTML = "Null"
+                        document.getElementById("Mar5").innerHTML = "Null"
+                        document.getElementById("Mar6").innerHTML = "Null"
+                        document.getElementById("Mar7").innerHTML = "Null"
+                        document.getElementById("Mar8").innerHTML = "Null"
+                        document.getElementById("Mar9").innerHTML = "Null"
+                        document.getElementById("Mar10").innerHTML = "Null"
+
+
+                    }
+
+
+                    if (Json_stud2 != undefined && Json_stud2 != null && Json_stud2 != "") {
+                        document.getElementById("Mar11").innerHTML = Json_stud2.fulName;
+                        document.getElementById("Mar01").innerHTML = Json_stud2.rollNum;
+                        document.getElementById("Mar12").innerHTML = Json_stud2.English;
+                        document.getElementById("Mar13").innerHTML = Json_stud2.Tamil;
+                        document.getElementById("Mar14").innerHTML = Json_stud2.Math;
+                        document.getElementById("Mar15").innerHTML = Json_stud2.Science;
+                        document.getElementById("Mar16").innerHTML = Json_stud2.Social;
+                        document.getElementById("Mar17").innerHTML = Json_stud2.Total;
+                        document.getElementById("Mar18").innerHTML = Json_stud2.Percentage;
+                        document.getElementById("Mar19").innerHTML = Json_stud2.Grade;
+                        document.getElementById("Mar20").innerHTML = Json_stud2.Remarks;
+
+
+                    }
+                    else {
+
+                        document.getElementById("Mar11").innerHTML = "Null"
+                        document.getElementById("Mar01").innerHTML = "Null"
+                        document.getElementById("Mar12").innerHTML = "Null"
+                        document.getElementById("Mar13").innerHTML = "Null"
+                        document.getElementById("Mar14").innerHTML = "Null"
+                        document.getElementById("Mar15").innerHTML = "Null"
+                        document.getElementById("Mar16").innerHTML = "Null"
+                        document.getElementById("Mar17").innerHTML = "Null"
+                        document.getElementById("Mar18").innerHTML = "Null"
+                        document.getElementById("Mar19").innerHTML = "Null"
+                        document.getElementById("Mar20").innerHTML = "Null"
+
+
+                    }
+                    if (Json_stud3 != undefined && Json_stud3 != null && Json_stud3 != "") {
+                        document.getElementById("Mar21").innerHTML = Json_stud3.fulName;
+                        document.getElementById("Mar02").innerHTML = Json_stud3.rollNum;
+                        document.getElementById("Mar22").innerHTML = Json_stud3.English;
+                        document.getElementById("Mar23").innerHTML = Json_stud3.Tamil;
+                        document.getElementById("Mar24").innerHTML = Json_stud3.Math;
+                        document.getElementById("Mar25").innerHTML = Json_stud3.Science;
+                        document.getElementById("Mar26").innerHTML = Json_stud3.Social;
+                        document.getElementById("Mar27").innerHTML = Json_stud3.Total;
+                        document.getElementById("Mar28").innerHTML = Json_stud3.Percentage;
+                        document.getElementById("Mar29").innerHTML = Json_stud3.Grade;
+                        document.getElementById("Mar30").innerHTML = Json_stud3.Remarks;
+
+
+                    }
+                    else {
+
+                        document.getElementById("Mar21").innerHTML = "Null"
+                        document.getElementById("Mar02").innerHTML = "Null"
+                        document.getElementById("Mar22").innerHTML = "Null"
+                        document.getElementById("Mar23").innerHTML = "Null"
+                        document.getElementById("Mar24").innerHTML = "Null"
+                        document.getElementById("Mar25").innerHTML = "Null"
+                        document.getElementById("Mar26").innerHTML = "Null"
+                        document.getElementById("Mar27").innerHTML = "Null"
+                        document.getElementById("Mar28").innerHTML = "Null"
+                        document.getElementById("Mar29").innerHTML = "Null"
+                        document.getElementById("Mar30").innerHTML = "Null"
+
+
+                    }
+
+                    if (Json_stud4 != undefined && Json_stud4 != null && Json_stud4 != "") {
+                        document.getElementById("Mar31").innerHTML = Json_stud4.fulName;
+                        document.getElementById("Mar03").innerHTML = Json_stud4.rollNum;
+                        document.getElementById("Mar32").innerHTML = Json_stud4.English;
+                        document.getElementById("Mar33").innerHTML = Json_stud4.Tamil;
+                        document.getElementById("Mar34").innerHTML = Json_stud4.Math;
+                        document.getElementById("Mar35").innerHTML = Json_stud4.Science;
+                        document.getElementById("Mar36").innerHTML = Json_stud4.Social;
+                        document.getElementById("Mar37").innerHTML = Json_stud4.Total;
+                        document.getElementById("Mar38").innerHTML = Json_stud4.Percentage;
+                        document.getElementById("Mar39").innerHTML = Json_stud4.Grade;
+                        document.getElementById("Mar40").innerHTML = Json_stud4.Remarks;
+
+
+                    }
+                    else {
+
+                        document.getElementById("Mar31").innerHTML = "Null"
+                        document.getElementById("Mar03").innerHTML = "Null"
+                        document.getElementById("Mar32").innerHTML = "Null"
+                        document.getElementById("Mar33").innerHTML = "Null"
+                        document.getElementById("Mar34").innerHTML = "Null"
+                        document.getElementById("Mar35").innerHTML = "Null"
+                        document.getElementById("Mar36").innerHTML = "Null"
+                        document.getElementById("Mar37").innerHTML = "Null"
+                        document.getElementById("Mar38").innerHTML = "Null"
+                        document.getElementById("Mar39").innerHTML = "Null"
+                        document.getElementById("Mar40").innerHTML = "Null"
+
+
+                    }
+                });
+            </script>
+
+</body>
+
+</html>
